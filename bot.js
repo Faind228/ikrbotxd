@@ -17,15 +17,19 @@ client.on('message', message => {
   	}
 });
 client.on('message', message => {
-    string disc;
+    
     if (message.content === 'help') {
     	message.reply('type ping');
         message.reply('type bing');
         message.reply('type help!');
-        disc = message.author.avatarURL;
-        message.reply(disc);
+        message.reply('type avatar :new:');
   	}
 });
+client.on('message', message =>){
+    if(message.content === 'avatar'){
+        message.reply("Here is ur avatar " + message.author.avatarURL); 
+    }
+}
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
