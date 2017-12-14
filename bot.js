@@ -17,10 +17,13 @@ client.on('message', message => {
   	}
 });
 client.on('message', message => {
+    string disc;
     if (message.content === 'help') {
     	message.reply('type ping');
         message.reply('type bing');
         message.reply('type help!');
+        disc = message.author.avatarURL;
+        message.reply(disc);
   	}
 });
 
