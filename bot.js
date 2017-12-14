@@ -27,7 +27,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if(message.content === 'avatar'){
-        message.reply("Here is ur avatar " + message.author.avatarURL); 
+        message.reply("Here is ur avatar " + message.author.avatar); 
     }
 });
 
