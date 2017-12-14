@@ -16,6 +16,13 @@ client.on('message', message => {
     	message.reply('BONG!');
   	}
 });
+client.on('message', message => {
+    if (message.content === 'help') {
+    	message.reply('type ping');
+        message.reply('type bing');
+        message.reply('type help!');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
