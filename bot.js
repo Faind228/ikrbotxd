@@ -25,11 +25,11 @@ client.on('message', message => {
         message.reply('type avatar :new:');
   	}
 });
-client.on('message', message =>){
+client.on('message', message => {
     if(message.content === 'avatar'){
         message.reply("Here is ur avatar " + message.author.avatarURL); 
     }
-}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
